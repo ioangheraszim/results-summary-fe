@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: #ebf1ff;
+}
+body main {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+body main .left-side {
+  padding: 2rem 0rem;
+  width: 50%;
+  border-radius: 1rem;
+  background-image: linear-gradient(#7857ff, #2e2be9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .left-side .result-title {
+  color: #c8c7ff;
+  padding: 1rem;
+  margin: 1rem;
+}
+body main .left-side .circle {
+  border-radius: 50%;
+  width: 200px;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+body main .left-side .circle .total-result {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+body main .left-side .circle .total-result .out-of {
+  font-size: 1rem;
+  color: #c8c7ff;
+  opacity: 0.5;
+}
+body main .left-side .score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+}
+body main .left-side .score h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin: rem;
+}
+body main .left-side .score p {
+  font-size: 1.2rem;
+  color: #fff;
+  opacity: 0.6;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+body main .right-side {
+  width: 50%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+body main .right-side .summary-score {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+body main .right-side .summary-score .separate {
+  display: flex;
+}
+body main .right-side .summary-score button {
+  padding: 1.35rem 1rem;
+  width: 100%;
+  border: none;
+  background-color: #1125d4;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 2.5rem;
+}
+body main .right-side .reaction {
+  justify-content: space-between;
+}
+body main .right-side .reaction p {
+  color: #ff5757;
+  font-weight: 700;
+}/*# sourceMappingURL=styles.css.map */

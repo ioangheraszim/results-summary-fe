@@ -1,0 +1,156 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+// Variables
+// Primary Colors
+$light-red: #ff5757;
+$orangey-yellow: #ffb01f;
+$green-teal: #00bd91;
+$cobalt-blue: #1125d4;
+// Gradients
+// Background
+$light-slate-blue: #7857ff;
+$light-royal-blue: #2e2be9;
+
+//Circle
+$violet-blue: hsla(256, 72%, 46%, 1);
+$persian-blue: hsla(241, 72%, 46%, 0);
+
+//Neutral
+$white: #fff;
+$pale-blue:#ebf1ff;
+$light-lavender: #c8c7ff;
+$dark-gray-blue: #303b5a;
+
+// Reset rules
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hanken Grotesk', sans-serif;    
+    background-color: $pale-blue;
+
+    main {        
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        border-radius: 1rem;
+
+        .left-side {
+            padding: 2rem 0rem;
+            width: 50%;
+            border-radius: 1rem;
+            background-image: linear-gradient($light-slate-blue, $light-royal-blue);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .result-title {
+                color: $light-lavender;
+                padding: 1rem;
+                margin: 1rem;
+            }
+
+            .circle {
+                border-radius: 50%;
+                width: 200px;                
+                background-image: linear-gradient($violet-blue, $persian-blue);
+                
+                .total-result {
+                    color: $white;
+                    font-size: 4rem;
+                    font-weight: 700;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 1.5rem;
+
+                    .out-of {
+                        font-size: 1rem;
+                        color: $light-lavender;
+                        opacity: .5;
+                    }
+                }
+            }
+
+            .score {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                padding: 2rem;
+                text-align: center;  
+                
+                h2 {
+                    font-size: 2rem;
+                    color: $white;
+                    margin: rem;                    
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    color: $white;
+                    opacity: .6;
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+            
+        }
+
+        .right-side {
+            width: 50%;
+            border-radius: 1rem; 
+            display: flex;
+            flex-direction: column;
+            
+            
+
+            .summary-score {
+                display: flex;  
+                padding: 1rem;
+                margin: 1rem;
+                border-radius: 1rem;
+
+                .separate {                    
+                    display: flex;                    
+                }
+
+                button {
+                    padding: 1.35rem 1rem;
+                    width: 100%;
+                    border: none;
+                    background-color: $cobalt-blue;
+                    color: $white;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    cursor: pointer;
+                    border-radius: 2.5rem;
+                }
+            }
+
+            .reaction {
+                p {
+                    color: $light-red;
+                    font-weight: 700;
+                   
+                }
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
