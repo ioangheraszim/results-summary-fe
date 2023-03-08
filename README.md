@@ -12,7 +12,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -69,4 +68,4 @@ I am excited about the possibilities that lie ahead and look forward to pushing 
 ## Author
 
 - GitHub - [Ioan Gheraszim](https://github.com/ioangheraszim)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ioangheraszim)
+- Frontend Mentor - [@ioangheraszim](https://www.frontendmentor.io/profile/ioangheraszim)
