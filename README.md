@@ -37,8 +37,8 @@ The mobile version
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/ioangheraszim/results-summary-fe)
+- Live Site URL: (https://ioangheraszim.github.io/results-summary-fe/)
 
 ## My process
 
