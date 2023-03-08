@@ -30,90 +30,82 @@ $dark-gray-blue: #303b5a;
     padding: 0;
 }
 
+body, .summary, .left, .circle  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
 body {
     min-height: 100vh;
-    max-width: 375px;
+    max-width: 23.438rem;
     margin: 0 auto;
-    display: flex;    
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: 'Hanken Grotesk', sans-serif;    
+    font-family: 'Hanken Grotesk', sans-serif;   
     background-color: $pale-blue;    
 
-    .left {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0 0 2rem 2rem;
-        background-image: linear-gradient(180deg, $light-slate-blue, $light-royal-blue);
+    .card {
+        background-color: $white;
+
+        .left {
+
+            border-radius: 0 0 2rem 2rem;
+            background-image: linear-gradient(180deg, $light-slate-blue, $light-royal-blue);
                 
-        .title {
-            text-align: center;
-            font-size: 1.2rem;
-            margin: 1.5rem;
-            font-weight: 500;
-            color: $white;
-            opacity: .7;
-        }
-
-        .circle {
-            width: 9.375rem;
-            height: 9.375rem;
-            border-radius: 50%;
-            background-image: linear-gradient(180deg, $violet-blue, $persian-blue);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: $white;
-
-            h2 {
-                font-size: 3.5rem;
-            }
-
-            p {
+            .title {
+                text-align: left;
+                font-size: 1.2rem;
+                margin: 1.5rem;
+                font-weight: 500;
                 color: $white;
-                opacity: .4;
+                opacity: .7;
             }
-        }
 
-        .content {
-            text-align: center;
-            margin-top: 1rem;
-            
-            h2 {
+            .circle {
+                width: 9.375rem;
+                height: 9.375rem;
+                border-radius: 50%;
+                background-image: linear-gradient(180deg, $violet-blue, $persian-blue);
                 color: $white;
+
+                h2 {
+                    font-size: 3.5rem;
+                }
+
+                p {                    
+                    opacity: .4;
+                }
             }
 
-            p {
-                padding: 1rem  2.4rem  2.4rem 2.4rem;
-                color: $light-lavender;
+            .content {
+                text-align: center;
+                margin-top: 1rem;
+                
+                h2 {
+                    color: $white;
+                }
+
+                p {
+                    padding: 1rem  2.4rem  2.4rem 2.4rem;
+                    color: $light-lavender;
+                }
             }
-        }
     }
 
-    .right {        
-        
+    .right { 
 
-        .title {            
-            margin: 1.5rem 0rem 1.5rem 1rem;            
+        .title-summary {            
+            margin: 1.5rem 1rem 1.5rem 2rem;            
             font-size: 1.2rem;            
         }
 
-        .summary{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-            min-width: 325px;
+        .summary{           
+            min-width: 20.313rem;
 
             button {
                 width: 90%;
-                padding: 1rem;
-                margin-top: 1rem;
+                padding: 1.35rem;
+                margin: 1.5rem;
                 border-radius: 2rem;
                 color: $white;
                 background-color: $dark-gray-blue;
@@ -130,7 +122,7 @@ body {
             }
 
             .summary-cards {
-                min-width: 325px;
+                min-width: 20.313rem;
                 display: flex;
                 justify-content: space-between;
 
@@ -161,6 +153,7 @@ body {
 
             .reaction {
                 background-color: rgba($color: $light-red, $alpha: .1);  
+
                 .summary-left{
                     p {
                         color: $light-red;
@@ -171,6 +164,7 @@ body {
             .memory {
 
                 background-color: rgba($color: $orangey-yellow, $alpha: .1);  
+
                 .summary-left{
                     p {
                         color: $orangey-yellow;
@@ -181,6 +175,7 @@ body {
             .verbal {
 
                 background-color: rgba($color: $green-teal, $alpha: .1);  
+
                 .summary-left{
                     p {
                         color: $green-teal;
@@ -191,6 +186,7 @@ body {
             .visual {
 
                 background-color: rgba($color: $cobalt-blue, $alpha: .1);  
+
                 .summary-left{
                     p {
                         color: $cobalt-blue;
@@ -199,8 +195,73 @@ body {
             }
         }
     }
+    }
+
 }
 
+@media (min-width: 48rem) {
 
+    body {        
+        max-width: 90rem; 
+        
+        .card {            
+            border-radius: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .left {
+                width: 23.438rem;                
+                border-radius: 2rem;
+
+                    
+                .title {
+                    margin: 2.35rem;
+                    font-size: 1.5rem;                   
+                }
+
+                .circle {
+                    width: 12.5rem;
+                    height: 12.5rem; 
+                }
+
+                .content {
+                    padding: 1.5rem 2rem;
+
+                    h2 {
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+            .right { 
+                padding: 1rem;
+
+                .title-summary { 
+                    margin: 1.5rem 1rem 1.5rem 1rem; 
+                    font-size: 1.5rem;
+                    margin-bottom: 2rem;            
+                }
+        
+                .summary { 
+        
+                    .summary-cards {
+                        min-width: 23.438rem;                           
+                        margin: 0 1rem 1.4rem;
+                        padding: 1rem;
+                        border-radius: .6rem;
+                       
+                    }
+                    
+                }
+            }
+        }
+       
+    } 
+}
 
 
